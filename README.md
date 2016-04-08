@@ -10,6 +10,12 @@
   * Channel: for communication in go routines
   * No class -> User defined type
 
+# Function:
+  * return multiple values
+  * use it like any other type
+  * support Function literals - closure
+  
+
 # NOTE:
   * anything(variable, user defined name, function, etc.) with upper case will be exported or visible when you pack it into a package.
   * command to run:

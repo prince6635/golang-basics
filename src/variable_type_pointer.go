@@ -20,7 +20,7 @@ const (
 	C
 )
 
-func main() {
+func variable_main() {
 	var message string
 	var a, b, c int
 	message = "hello, Go!!!"
