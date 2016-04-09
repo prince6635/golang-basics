@@ -74,7 +74,7 @@ func CreatePrintFunction(custom string) Printer {
 	}
 }
 
-func main() {
+func main_functions() {
 	var s = SalutationForFunc{"Zee", "Hello, function!!!"}
 	Greet(s)
 
