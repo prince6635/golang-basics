@@ -6,7 +6,7 @@ import (
 	"./lib"
 )
 
-func main() {
+func main_branching() {
 	// var s = lib.Salutation_Greeting{"Zi", "Hello"}
 	// var s = lib.Salutation_Greeting{"Doe", "Hello"}
 	var s = lib.Salutation_Greeting{"0123456789", "Hello"}
