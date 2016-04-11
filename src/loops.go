@@ -43,7 +43,7 @@ func Greet_Loop(str string, strs []string, do func(string), times int) {
 	}
 }
 
-func main() {
+func main_loop() {
 	var doFunc = func(str string) {
 		fmt.Println(str)
 	}
