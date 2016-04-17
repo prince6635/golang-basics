@@ -40,6 +40,6 @@ func GetPrefix(name string) (prefix string) {
 	return prefixMap[name] + ", " + prefixMap1["Amy"]
 }
 
-func main() {
+func main_maps() {
 	fmt.Println(GetPrefix("Zee"))
 }
