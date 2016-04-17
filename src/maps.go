@@ -17,7 +17,27 @@ func GetPrefix(name string) (prefix string) {
 	prefixMap["Doe"] = "Dr "
 	prefixMap["Mary"] = "Mrs "
 
-	return prefixMap[name]
+	// simple way to create a map
+	prefixMap1 := map[string]string{
+		"Bob":  "Mr ",
+		"Joe":  "Dr ",
+		"Amy":  "Dr ",
+		"Mary": "Mrs ",
+	}
+
+	// update map, insert if key doesn't exist
+	prefixMap1["Amy"] = "Jr "
+
+	// delete in map
+	// DON'T have to check whether the key exists or not.
+	delete(prefixMap1, "Amy")
+
+	// prefixMap1["Mary"] returns 2 values
+	if value, exists := prefixMap1["Mary"]; exists {
+		return "Found! " + value
+	}
+
+	return prefixMap[name] + ", " + prefixMap1["Amy"]
 }
 
 func main() {
