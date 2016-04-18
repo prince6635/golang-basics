@@ -82,4 +82,9 @@ func main_functions() {
 	GreetByFuncType(s, PrintLine)
 
 	GreetByFuncType(s, CreatePrintFunction("Custom by closure:"))
+
+	// anonymous function -> no lambda in Go
+	func(msg string) {
+		fmt.Println("Anonymous function message: " + msg)
+	}("testing")
 }
