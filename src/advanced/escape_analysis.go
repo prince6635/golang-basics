@@ -8,6 +8,7 @@ type Point struct {
 
 // the compile see you return the address and just makes it on the heap for you.
 // This is a common idiom in go.
+// otherwise, will return by value, http://stackoverflow.com/questions/10866195/stack-vs-heap-allocation-of-structs-in-go-and-how-they-relate-to-garbage-collec
 func newPoint() *Point {
 	return &Point{10, 20}
 }
