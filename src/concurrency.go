@@ -129,7 +129,7 @@ func TestSelectInChannels() {
 	}
 }
 
-func main() {
+func main_concurrency() {
 	data := []ChannelData{
 		{1, "Zi"},
 		{2, "Z"},

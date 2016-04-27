@@ -40,6 +40,30 @@ func GetPrefix(name string) (prefix string) {
 	return prefixMap[name] + ", " + prefixMap1["Amy"]
 }
 
-func main_maps() {
+// Fields is the concrete LogFields type, as in myLogger.WithFields(bark.Fields{"foo": "bar"}).Info("Fields!")
+type Fields map[string]interface{}
+
+func PrintGeneralInterfaceValuesMap() {
+	var data map[string]interface{}
+	data = make(map[string]interface{})
+	data["Zee"] = "Mr "
+	data["Joe"] = 123
+	fmt.Printf("%+v\n", data)
+
+	fields := Fields{
+		"Bob":  "Mr ",
+		"Joe":  123,
+		"Amy":  "Dr ",
+		"Mary": 456,
+	}
+	fmt.Printf("%+v\n", fields)
+
+	for key, val := range fields {
+		fmt.Printf("key:%v, value:%v\n", key, val)
+	}
+}
+
+func main() {
 	fmt.Println(GetPrefix("Zee"))
+	PrintGeneralInterfaceValuesMap()
 }
