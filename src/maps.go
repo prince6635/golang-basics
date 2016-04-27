@@ -63,7 +63,7 @@ func PrintGeneralInterfaceValuesMap() {
 	}
 }
 
-func main() {
+func main_maps() {
 	fmt.Println(GetPrefix("Zee"))
 	PrintGeneralInterfaceValuesMap()
 }
