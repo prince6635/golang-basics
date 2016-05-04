@@ -64,6 +64,13 @@ func PrintChannelDataInfo(data []ChannelData, customMsg string) {
 // Channel with range
 type ChannelDatas []ChannelData
 
+/*
+Think of a channel as a message queue.
+If the channel is on the right of the left arrow (<-) operator, it means to dequeue an entry. Saving the entry in a variable is optional
+	e <- q
+If the channel is on the left of the left arrow operator, it means to enqueue an entry.
+	q <- e
+*/
 func (channelDatas ChannelDatas) PrintChannelDatas(c chan ChannelData) {
 	// async filling up the channel with data
 	// can be done in different coroutines, too.
