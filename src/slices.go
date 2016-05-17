@@ -17,6 +17,12 @@ Slice: a wrapper of an array, take part of the array, so the underlying has to b
 
 !!! in function params, always pass slice instead of array
 http://openmymind.net/The-Minimum-You-Need-To-Know-About-Arrays-And-Slices-In-Go/
+In go, everything is pass by value.
+However, a string is a struct that has a length and a pointer to a byte array.
+When you pass a string to another function, it copies the length and the pointer.
+As a consequence, the new copied string points to the same underlying data.
+So pass []string instead of []*string, but for user-defined structs, better pass by []*MyClass,
+https://www.goinggo.net/2013/09/iterating-over-slices-in-go.html
 */
 
 type SliceObj struct {
