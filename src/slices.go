@@ -14,6 +14,9 @@ Slice: a wrapper of an array, take part of the array, so the underlying has to b
   Type is slice of underlying type (doesn't have length)
   Use make to initialize otherwise is nil
   Points to an array
+
+!!! in function params, always pass slice instead of array
+http://openmymind.net/The-Minimum-You-Need-To-Know-About-Arrays-And-Slices-In-Go/
 */
 
 type SliceObj struct {
